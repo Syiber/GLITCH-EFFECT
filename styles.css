@@ -1,0 +1,39 @@
+@keyframes glitch {
+    0%{
+        transform: translate(0);
+    }
+    25%{
+        transform: translate(-5px, 5px);
+    }
+    50%{
+        transform: translate(5px, -5px);
+    }
+    75%{
+        transform: translate(-5px, 5px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+.container{
+    width: 400px;
+    height: 400px;
+    display: block;
+    text-align: center;
+    margin:120px auto;
+    background-color: azure;
+    border-radius: 1px solid black;
+}
+
+.glitch{
+    width: 400px;
+    height: 400px;
+    background-color: rebeccapurple;
+    border-radius: 10px ;
+    box-shadow: 2px 3px 1px 0px ;
+    position: relative;
+    display: inline-block;
+    animation: glitch 1s infinite;
+}
+
